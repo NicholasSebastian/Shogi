@@ -4,6 +4,8 @@ import { StatusBar } from 'expo-status-bar';
 
 import Header from './components/Header';
 import Home from './pages/Home';
+import VsComputer from './pages/VsComputer';
+import PassPlay from './pages/PassPlay';
 
 interface IPageIndex {
   [key: string]: JSX.Element
@@ -16,7 +18,9 @@ const App: FC = () => {
   const [pageIndex, setPage] = useState('home');
 
   const pages: IPageIndex = {
-    home: <Home />
+    home: <Home />,
+    vsComp: <VsComputer />,
+    passPlay: <PassPlay />
   };
 
   return (
